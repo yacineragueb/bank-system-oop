@@ -121,6 +121,13 @@ private:
             Permissions += clsUser::enPermissions::pShowLogInRegister;
         }
 
+        cout << "\nShow Currency Exchange Menue? y/n? ";
+        cin >> Answer;
+        if (Answer == 'y' || Answer == 'Y')
+        {
+            Permissions += clsUser::enPermissions::pShowCurrencyExchange;
+        }
+
         return Permissions;
 
     }
